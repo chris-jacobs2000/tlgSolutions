@@ -1,16 +1,16 @@
 --[[PREFACE: When searching for forums to help with this code, I found a similar solution
 on github (https://github.com/rodrigo-ot/jumpGame/tree/main/client_jumpgame). I took
-the time to understand the code in it's entirety and tried to use that same logic
-below. My goal was to not copy it for verbatim, but rather be able to demonstrate
+the time to understand the code in its entirety and tried to use that same logic
+below. My goal was to not copy it verbatim, but rather be able to demonstrate
 that I understand how all the components work to make the final product. I wanted
 to place this note as a preface to give credit to the author and show transparency
-for areas that look similar in logic. ]]--
+in areas that look similar in logic. ]]--
 
 
 --[[ ANIMATED BUTTON ON CUSTOM UI ]]--
 
 
--- Creating our window variable as well as our table variable to hold instanziations
+-- Creating our window variable as well as our table variable to hold instantiations
 window = nil
 Interview = {}
 
@@ -33,7 +33,7 @@ function init()
 end
 
 ----
---[[Terminate Method: Method used for terminating our connection to the game as well as destroying our window and table once fully terminated]]--
+--[[Terminate Method: Method used for terminating our connection to the game as well as destroying our window and table]]--
 ----
 function terminate()
   disconnect(g_game, { onLogin = Interview.create,
@@ -41,7 +41,7 @@ function terminate()
   -- Pass the table through to the destroy method to completely wipe it
   Interview.destroy()
 
-  -- Finally, we want to remove the event from the cycle and reset the value to null to indicate inactivity
+  -- Finally, we want to remove the event from the cycle and reset the value to nill to indicate inactivity
   removeEvent(movementEvent)
   movementEvent = nil
 end
@@ -56,11 +56,11 @@ function Interview.create()
   -- Create a button variable that links to our butto in the OTUI file.
   jumpButton = window:getChildById('jumpButton')
 
-  -- Instanziate window dimension variables
+  -- Instan window dimension variables
   winHeight = window:getHeight()
   winWidth = window:getWidth()
   
-  -- Instanziate button dimension variables
+  -- Instantiate button dimension variables
   butHeight = jumpButton:getHeight()
   butWidth = jumpButton:getWidth()
 
