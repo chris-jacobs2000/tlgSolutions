@@ -1,0 +1,21 @@
+MainWindow
+  id: window
+  size: 250 250
+
+  Button
+    id: jumpButton
+    anchors.top: parent.top
+    anchors.right: parent.right
+    !text: tr('Jump!')
+    width: 50
+    height: 25
+    @onClick: modules.client_interviewui.Interview.reset()
+
+  Button
+    id: closeButton
+    anchors.bottom: parent.bottom
+    anchors.right: parent.right
+    !text: tr('X')
+    height: 12
+    width: 12
+    @onClick: self:getParent():destroy()

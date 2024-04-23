@@ -1,0 +1,11 @@
+Module
+  name: client_movingbutton
+  description: Minigame
+  author: leinad
+  website: https://github.com/rodrigo-ot
+  sandboxed: true
+  autoload: true
+  autoload-priority: 1000
+  scripts: [ movingbutton ]
+  @onLoad: init()
+  @onUnload: terminate()
