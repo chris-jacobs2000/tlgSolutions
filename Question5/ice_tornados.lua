@@ -1,4 +1,4 @@
---[[Preface: When finding aid for this questions through solutions and forums, I cam across
+--[[PREFACE: When finding aid for this questions through solutions and forums, I cam across
 this forum (https://otland.net/threads/advanced-ice-storm-spell.288740/) that was able to help
 me create a foundation for the solution. I wanted to put this preface here to give credit to the
 author of the forum for asking the question as well as the other authors who helped give suggestions.]]--
